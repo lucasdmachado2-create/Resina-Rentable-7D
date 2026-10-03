@@ -41,28 +41,28 @@ export default function CountdownTimer() {
   const formatTime = (time: number) => time.toString().padStart(2, '0');
 
   return (
-    <div className="flex flex-col items-center justify-center bg-rose-50 border border-rose-100 rounded-2xl p-4 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-      <div className="flex items-center gap-2 text-rose-600 font-bold mb-2 uppercase tracking-wider text-sm">
-        <Clock className="w-4 h-4" />
+    <div className="flex flex-col items-center justify-center bg-rose-50 border border-rose-100 rounded-2xl p-4 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300 w-full max-w-md mx-auto">
+      <div className="flex items-center gap-2 text-rose-600 font-bold mb-2 uppercase tracking-wider text-xs sm:text-sm text-center">
+        <Clock className="w-4 h-4 shrink-0" />
         La oferta termina en:
       </div>
-      <div className="flex items-center gap-3 text-neutral-900">
+      <div className="flex items-center gap-2 sm:gap-3 text-neutral-900">
         <div className="flex flex-col items-center">
-          <div className="bg-white text-rose-600 font-black text-3xl w-14 h-14 flex items-center justify-center rounded-xl shadow-sm border border-rose-100">
+          <div className="bg-white text-rose-600 font-black text-2xl sm:text-3xl w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl shadow-sm border border-rose-100">
             {formatTime(timeLeft.hours)}
           </div>
           <span className="text-[10px] uppercase font-bold text-neutral-500 mt-1">Horas</span>
         </div>
-        <span className="text-2xl font-black text-rose-300 pb-4">:</span>
+        <span className="text-xl sm:text-2xl font-black text-rose-300 pb-4">:</span>
         <div className="flex flex-col items-center">
-          <div className="bg-white text-rose-600 font-black text-3xl w-14 h-14 flex items-center justify-center rounded-xl shadow-sm border border-rose-100">
+          <div className="bg-white text-rose-600 font-black text-2xl sm:text-3xl w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl shadow-sm border border-rose-100">
             {formatTime(timeLeft.minutes)}
           </div>
           <span className="text-[10px] uppercase font-bold text-neutral-500 mt-1">Minutos</span>
         </div>
-        <span className="text-2xl font-black text-rose-300 pb-4">:</span>
+        <span className="text-xl sm:text-2xl font-black text-rose-300 pb-4">:</span>
         <div className="flex flex-col items-center">
-          <div className="bg-white text-rose-600 font-black text-3xl w-14 h-14 flex items-center justify-center rounded-xl shadow-sm border border-rose-100">
+          <div className="bg-white text-rose-600 font-black text-2xl sm:text-3xl w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl shadow-sm border border-rose-100">
             {formatTime(timeLeft.seconds)}
           </div>
           <span className="text-[10px] uppercase font-bold text-neutral-500 mt-1">Segundos</span>
