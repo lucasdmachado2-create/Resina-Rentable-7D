@@ -41,7 +41,7 @@ export default function CountdownTimer() {
   const formatTime = (time: number) => time.toString().padStart(2, '0');
 
   return (
-    <div className="flex flex-col items-center justify-center bg-rose-50 border border-rose-100 rounded-2xl p-4 mb-8">
+    <div className="flex flex-col items-center justify-center bg-rose-50 border border-rose-100 rounded-2xl p-4 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300">
       <div className="flex items-center gap-2 text-rose-600 font-bold mb-2 uppercase tracking-wider text-sm">
         <Clock className="w-4 h-4" />
         La oferta termina en:
