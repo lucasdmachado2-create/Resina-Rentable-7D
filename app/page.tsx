@@ -1,21 +1,10 @@
 import {
   AlertCircle,
   ArrowRight,
-  CheckCircle2,
   ShieldCheck,
   Star,
-  XCircle,
-  Gift,
-  Clock,
-  PlayCircle,
-  TrendingUp,
   Award,
-  Video,
-  Quote,
-  ThumbsUp,
-  Heart,
-  Zap,
-  Users
+  Clock
 } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 

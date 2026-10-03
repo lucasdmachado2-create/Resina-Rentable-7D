@@ -12,6 +12,7 @@ export default function CountdownTimer() {
 
   useEffect(() => {
     const timer = setInterval(() => {
+      if (document.hidden) return;
       setTimeLeft((prev) => {
         if (prev.hours === 0 && prev.minutes === 0 && prev.seconds === 0) {
           clearInterval(timer);
