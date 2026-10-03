@@ -61,22 +61,23 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* MARQUEE DE MEDIOS / ARTÍCULOS DE PRENSA EN LOOP */}
+      {/* MARQUEE DE MEDIOS / NOTICIAS DE TV Y REVISTAS EN LOOP */}
       <section className="py-10 bg-amber-500 text-neutral-900 overflow-hidden border-y border-amber-600">
         <div className="max-w-7xl mx-auto px-4 mb-4 text-center">
           <p className="text-xs md:text-sm font-extrabold tracking-widest uppercase text-neutral-900 opacity-90">
-            Visto en revistas, diarios y medios internacionales de decoración y emprendimiento
+            Visto en la TV (Globo, SBT, Band), Revistas y Diarios de gran circulación
           </p>
         </div>
         <div className="flex w-full overflow-x-hidden relative">
           <div className="flex animate-marquee whitespace-nowrap gap-12 items-center">
             {[
-              { name: "Revista Hogar & Diseño", quote: "El manual definitivo para emprender en resina desde casa." },
-              { name: "Diario El Clarín", quote: "El arte del porcelanato líquido revoluciona los talleres independientes." },
-              { name: "Emprende Hoy Magazine", quote: "Cientos de alumnos facturan su primer mes gracias al método paso a paso." },
-              { name: "Arquitectura & Estilo", quote: "Técnicas profesionales al alcance de cualquier principiante." },
-              { name: "Revista Hogar & Diseño", quote: "El manual definitivo para emprender en resina desde casa." },
-              { name: "Diario El Clarín", quote: "El arte del porcelanato líquido revoluciona los talleres independientes." }
+              { name: "Rede Globo - Mais Você", quote: "El nuevo boom del porcelanato líquido en hogares de todo el país." },
+              { name: "SBT - Fofocalizando", quote: "Emprendedoras multiplican sus ingresos desde casa con este método." },
+              { name: "Band - Jornal da Band", quote: "Técnica accesible y lucrativa revoluciona el mercado de manualidades." },
+              { name: "Revista Hogar & Diseño", quote: "El manual definitivo para emprender en resina con éxito." },
+              { name: "Diario El Clarín", quote: "El arte del porcelanato líquido revoluciona talleres independientes." },
+              { name: "Rede Globo - Mais Você", quote: "El nuevo boom del porcelanato líquido en hogares de todo el país." },
+              { name: "SBT - Fofocalizando", quote: "Emprendedoras multiplican sus ingresos desde casa con este método." }
             ].map((media, i) => (
               <div key={i} className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-sm border border-amber-400">
                 <Award className="w-5 h-5 text-amber-600 flex-shrink-0" />
